@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change With JS</title>
+    <style>
+        #banner {
+            height: 350px;
+            margin-right: 220px;
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 50px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            background-color: black;
+        }
+
+        #banner h1,
+        p {
+            color: white;
+            text-shadow: 1cm;
+            word-spacing: 5px;
+            font-variant: small-caps;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 1.26vw;
+            font-weight: bolder;
+
+        }
+
+        #banner h1 {
+            font-family: "Audiowide", sans-serif;
+            text-align: left;
+
+        }
+
+        body {
+            background-color: rgb(175, 204, 199);
+        }
+
+        #banner p {
+            text-align: left;
+
+            font-weight: lighter;
+        }
+
+        button {
+            padding: 5px;
+            width: 40%;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            margin-left: 15px;
+            margin-top: 10px;
+            font-weight: bold;
+            border: thick;
+            font-variant: small-caps;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function text(x) {
+            if (x == 1) {
+                document.getElementById('banner').style.background = '#f9b10c';
+                document.getElementById('bg').style.background = '#222823'
+                document.getElementById('h').style.color = 'black';
+                document.getElementById('p').style.color = 'black';
+                document.getElementById('p1').style.color = 'black';
+            } else if (x == 0) {
+                document.getElementById('banner').style.background = 'black';
+                document.getElementById('bg').style.background = '#99BADD'
+                document.getElementById('h').style.color = 'white';
+                document.getElementById('p').style.color = 'white';
+                document.getElementById('p1').style.color = 'white';
+            }
+
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body id="bg">
+    <div id="banner">
+        <h1 id="h" class="font-effect-neon">basantaChaw</h1>
+        <hr>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad hic, praesentium omnis, sed
+            excepturi
+            officia ex incidunt enim amet tenetur voluptas corporis voluptatum molestiae cum minima debitis molestias
+            culpa?</p>
+        <p id="p1">a book or other written or printed work, regarded in terms of its content rather than its physical
+            form.
+            <!---- <input type="button" value="Change"onclick='text()'>-->
+            <button onclick="text(0)">Back </button>
+            <button onclick="text(1)">Next </button>
+        </p>
+    </div>
+</body>
+
+</html>
